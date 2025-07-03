@@ -19,10 +19,31 @@ let k = 4;
 // using extra space 
 
 
-let tempArray=new Array(arr.length);
-k=k%arr.length;
+// let tempArray=new Array(arr.length);
+// k=k%arr.length;
 
-for(let i=0;i<arr.length;i++){
-  tempArray[i]=arr[(i+k)%arr.length];
+// for(let i=0;i<arr.length;i++){
+//   tempArray[i]=arr[(i+k)%arr.length];
+// }
+// console.log(tempArray);
+
+
+
+// Optimal approach
+// by reversing the array multiple times
+
+function reverseArray(arr,i,j){
+  while(i<j){
+    let temp=arr[i];
+    arr[i]=arr[j];
+    arr[j]=temp;
+    i++;
+    j--;
+  }
+  
 }
-console.log(tempArray);
+
+reverseArray(arr,0,k-1);
+reverseArray(arr,k,arr.length-1);
+reverseArray(arr,0,arr.length-1);
+console.log(arr);
