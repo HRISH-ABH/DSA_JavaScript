@@ -6,11 +6,23 @@ let arr = [7, 3, 1, 10, 10];
 console.log(arr);
 let k = 4;
 
-for (let j = 0; j < k; j++) {
-  let temp = arr[0];
-  for (let i = 0; i < arr.length - 1; i++) {
-    arr[i] = arr[i + 1];
-  }
-  arr[arr.length - 1] = temp;
+// for (let j = 0; j < k; j++) {
+//   let temp = arr[0];
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     arr[i] = arr[i + 1];
+//   }
+//   arr[arr.length - 1] = temp;
+// }
+// console.log(arr);
+
+
+// using extra space 
+
+
+let tempArray=new Array(arr.length);
+k=k%arr.length;
+
+for(let i=0;i<arr.length;i++){
+  tempArray[i]=arr[(i+k)%arr.length];
 }
-console.log(arr);
+console.log(tempArray);
