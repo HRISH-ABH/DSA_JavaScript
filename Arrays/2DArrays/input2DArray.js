@@ -15,7 +15,7 @@ for (let i = 0; i < arr.length; i++) {
 }
 for (let i = 0; i < arr.length; i++) {
   for (let j = 0; j < arr[i].length; j++) {
-    arr[i][j] = prompt("Enter the ELement: ");
+    arr[i][j] = Number(prompt("Enter the ELement: "));
   }
 }
 console.log(arr);
