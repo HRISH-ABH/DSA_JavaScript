@@ -5,7 +5,7 @@
 
 let arr = [3, 5, 1, 9, 7];
 
-for(let i=0;i<arr.length;i++){
+for(let i=0;i<arr.length-1;i++){
     let small=i;
     for(let j=i+1;j<arr.length;j++){
         if(arr[small]>arr[j]){
