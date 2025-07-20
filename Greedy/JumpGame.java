@@ -1,22 +1,19 @@
 package Greedy;
 
-public class JumpGame {
-    public int jump(int[] nums) {
-        int jumps = 0, l = 0, r = 0;
+class JumpGame {
+    public boolean canJump(int[] nums) {
 
-        while (r < nums.length - 1) {
-            int maxR = 0;
+        int goal=nums.length-1; //last index
 
-            for (int i = l; i <=r; i++) {
-                maxR = Math.max(maxR, i + nums[i]);
+        //starting from behind--second last index
+        for(int i=nums.length-2;i>=0;i--){
+
+            // can we reach goal from this index?
+            if(i+nums[i] >= goal){
+                // update goal
+                goal=i;
             }
-            l = r + 1;
-            r = maxR;
-            jumps++;
         }
-        return jumps;
-
+        return goal==0;
     }
- 
-    
 }
