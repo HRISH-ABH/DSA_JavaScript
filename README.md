@@ -1,4 +1,3 @@
-
 # 🧠 DSA Practice in JavaScript
 
 This repository is my personal collection of **Data Structures and Algorithms (DSA)** problems solved using **JavaScript**. It helps me revisit and revise problems anytime with structured and readable solutions.
@@ -6,6 +5,7 @@ This repository is my personal collection of **Data Structures and Algorithms (D
 ## 📌 About
 
 This repo includes solutions from:
+
 - [LeetCode](https://leetcode.com/)
 - [GeeksforGeeks](https://www.geeksforgeeks.org/)
 
@@ -16,18 +16,21 @@ Each file contains a clean implementation of the problem with meaningful variabl
 ```
 .
 ├── Arrays/
-├── Strings/
+│   └── 2DArrays/
+├── Bitwise/
+├── Greedy/
+├── LC-Daily/
+├── LeetCode/
+│   └── Contest_161/
 ├── LinkedList/
-├── Stack/
-├── Queue/
-├── Trees/
-├── Graphs/
+├── Map/
+├── Math_Problems/
+├── Others/
 ├── Recursion/
-├── DynamicProgramming/
 ├── SearchingAndSorting/
-├── Backtracking/
-├── BitManipulation/
-├── Math/
+├── Set/
+├── SlidingWindow/
+├── Strings/
 └── README.md
 ```
 
@@ -41,6 +44,7 @@ Each folder groups problems based on the DSA topic. Files are named after the pr
    cd DSA-JavaScript
    ```
 2. **Installing promptSync(only for terminal input)**
+
    ```bash
    npm i prompt-sync
    ```
@@ -73,5 +77,5 @@ Each folder groups problems based on the DSA topic. Files are named after the pr
 
 ---
 
-> 🧘‍♂️ *“Practice makes progress.”*  
-This repo is my space to stay consistent and grow as a developer.
+> 🧘‍♂️ _“Practice makes progress.”_  
+> This repo is my space to stay consistent and grow as a developer.
